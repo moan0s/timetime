@@ -8,7 +8,7 @@ pipeline:
       host:
         - timetime.hyteck.de
       username: time
-      target: /var/www/time/
+      target: /var/www/timetime/
       source: ./
       key:
         from_secret: ssh_key
