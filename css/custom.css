@@ -1,0 +1,98 @@
+body {
+  font-family: sans-serif;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.base-timer {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
+
+#timelineList {
+  list-style: none;
+  font-size: large;
+}
+
+.section {
+  width: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  border: 2px solid #666;
+  margin: 5px;
+}
+.active {
+  background-color: red;
+}
+
+li {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 5px;
+  float: left;
+  width: 30%;
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: row;     /* make main axis horizontal (default setting) */
+  justify-content: center; /* center items horizontally, in this case */
+  align-items: center;     /* center items vertically, in this case */
+  float: left;
+}
+
+.box {
+  margin: 5px;
+  text-align: center;     /* will center text in <p>, which is not a flex item */
+}

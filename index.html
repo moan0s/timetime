@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<audio id="myAudio">
+  <source src="assets/beep.wav">
+  Your browser does not support the audio element.
+</audio>
+
+
+<h1>TimeTime.</h1>
+<b>Deine persönliche Pomodoro Lösung</b>
+
+<div class="panel">
+  <div class="controls">
+    <button onclick="resetTimerFull()">Start/Reset Session</button>
+  <button onclick="continueTimer()">Continue</button>
+  <button onclick="pauseTimer()">Pause</button>
+  </div>
+
+  <div id="app"></div>
+</div>
+
+<div class="panel">
+<div id="timelineWrapper">
+<ul id="timelineList">
+
+</ul>
+</div>
+
+</div>
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
