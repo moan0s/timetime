@@ -6,7 +6,7 @@ pipeline:
     settings:
       strip_components: 1
       host:
-        - time.hyteck.de
+        - timetime.hyteck.de
       username: time
       target: /var/www/time/
       source: ./
