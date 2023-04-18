@@ -1,0 +1,19 @@
+---
+
+pipeline:
+  build:
+    image: klakegg/hugo 
+    commands:
+      - hugo
+
+  deploy:
+    image: appleboy/drone-scp
+    settings:
+      strip_components: 1
+      host:
+        - reinmuth.uberspace.de
+      username: moanos
+      target: /home/moanos/html/
+      source: public/
+      key:
+        from_secret: ssh_key
